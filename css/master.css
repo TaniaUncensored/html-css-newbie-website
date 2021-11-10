@@ -1,0 +1,170 @@
+body {
+    color: #40514E;
+    margin: 0;
+    text-align: center;
+    /*to center text when not using a width, or use margin:auto; when adjusting width etc. as text-align no longer works then*/
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    margin: 50px auto 0 auto;
+    font-family: 'Great Vibes', cursive;
+    font-size: 6rem;
+    color: #66BFBF;
+    /* line-height: 2;  - can be used to have a bigger space between the title & subtitle but I prefer without so...*/
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #66BFBF;
+    font-weight: heavy;
+    font-size: 2rem;  /*the rem units refer to the property’s initial value - This means that 1rem equals the font size of the html element (which for most browsers has a default value of 16px).*/
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+a:hover{
+    color:#EAF6F6
+}
+
+hr {
+    border: 6px dotted #b5fafa; /* don't use border-top here, just border - will show a weird extra element in front of the line otherwise*/
+    border-bottom: none;
+    width: 4%;
+    margin:  100px auto; /* top and bottom 100px, l & R auto */
+}
+
+.hr-bottom{
+    margin: 200px auto 100px auto;
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* line-height: 2; */
+}
+
+.middle-container {
+    /*!!! try and use the margin and padding (and other properties) in the main containers vs separate elements*/
+    margin: 100px 0;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    margin-top: 100px;
+    padding:50px 0 20px; /* makes it so there isn't a white part underneath the bottom container */
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+}
+
+.monstera {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.phoenix {
+    width: 25%; /* percentage of the parent */
+    float: right; /*only use it to wrap text as it can cause a lot of issues */
+    margin-left: 30px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+/* 
+.testclear{
+    clear: right; - this makes it so the text appears below the image, it's the anti clear
+} */
+
+.profile-description {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.contact-description {
+    width: 40%;
+    margin: 40px auto 60px;
+    margin-bottom: 50px;
+}
+
+.BUTTON_VXI {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+    background-color: #66BFBF;
+    border: solid #66BFBF 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.BUTTON_VXI:hover {
+    border: solid #66BFBF 1px;
+    background: #66BFBF;
+    background-image: -webkit-linear-gradient(top, #66BFBF, #286b6b);
+    background-image: -moz-linear-gradient(top, #66BFBF, #286b6b);
+    background-image: -ms-linear-gradient(top, #66BFBF, #286b6b);
+    background-image: -o-linear-gradient(top, #66BFBF, #286b6b);
+    background-image: -webkit-gradient(to bottom, #66BFBF, #286b6b);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.footer-text {
+    padding: 20px 0;
+    color: #EAF6F6;
+    font-size: 0.75rem;
+}
